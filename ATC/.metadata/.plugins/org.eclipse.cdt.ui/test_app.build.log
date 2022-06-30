@@ -1,0 +1,35 @@
+14:05:52 **** Auto Build of configuration Debug for project test_app ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"C:\git\noh-firmware\AXI_CAN_core\drivers" -I"C:\git\noh-firmware\AXI_DMM_core\drivers" -I"C:\git\noh-firmware\AXI_ADC_core\drivers" -I"C:\git\noh-firmware\AXI_DAC_core\drivers" -I"C:\git\noh-firmware\AXI_I2C_core\drivers" -I"C:\git\noh-firmware\AXI_UART_core\drivers" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:409:6: warning: "/*" within comment [-Wcomment]
+     //*************************
+       
+../src/main.c:640:8: warning: implicit declaration of function 'usleep'; did you mean 'fseek'? [-Wimplicit-function-declaration]
+        usleep(10000);
+        ^~~~~~
+        fseek
+../src/main.c:317:17: warning: variable 'tx_frame_1' set but not used [-Wunused-but-set-variable]
+  CAN_tx_frame_t tx_frame_1 = {0};
+                 ^~~~~~~~~~
+../src/main.c:313:14: warning: variable 'uart_pause_counter' set but not used [-Wunused-but-set-variable]
+     unsigned uart_pause_counter;
+              ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: test_app.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -L../../standalone_bsp_0/psu_cortexa53_0/lib -Wl,-Map -Wl,"..\..\linkermap.map" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "test_app.elf"  ./src/AXI_mem_access.o ./src/main.o ./src/platform.o  ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.o ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.o  ./noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.o  ./noh-firmware/AXI_I2C_core/drivers/AXI_i2c.o  ./noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.o  ./noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.o  ./noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.o  ./noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test_app.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size test_app.elf  |tee "test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92296	   4608	  20752	 117656	  1cb98	test_app.elf
+Finished building: test_app.elf.size
+ 
+
+14:05:54 Build Finished (took 2s.24ms)
+

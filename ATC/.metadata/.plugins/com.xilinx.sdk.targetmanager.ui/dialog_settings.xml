@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Local" key="atc_hw-target"/>
+	<item value="atc_hw" key="programfpga.hwplatform"/>
+	<item value="" key="atc_hw-bmmFile"/>
+	<item value="Auto Detect" key="atc_hw-device"/>
+	<item value="false" key="atc_hw-partial_bit"/>
+	<item value="noh_system_BD_wrapper.bit" key="atc_hw-bitFile"/>
+</section>

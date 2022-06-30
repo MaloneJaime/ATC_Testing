@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Thu Jun 30 14:06:47 2022
+# Process ID: 16412
+# Current directory: C:/eclipse_workspace/ATC/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/eclipse_workspace/ATC/webtalk/webtalk.log
+# Journal file: C:/eclipse_workspace/ATC/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="ATC-HW-project" key="programflash.hwplatform"/>
+	<item value="0" key="ATC-HW-project-offSet"/>
+	<item value="D:\eclipse-workspace\ATC\fsbl\Debug\fsbl.elf" key="ATC-HW-project-fsblFile"/>
+	<item value="false" key="ATC-HW-project-blankCheck"/>
+	<item value="Auto Detect" key="ATC-HW-project-device"/>
+	<item value="C:\Users\Brendan\Downloads\BOOT.bin" key="ATC-HW-project-imgFile"/>
+	<item value="Local" key="ATC-HW-project-target"/>
+	<item value="false" key="ATC-HW-project-verifyFlash"/>
+	<item value="qspi-x8-dual_parallel" key="ATC-HW-project-flashType"/>
+</section>

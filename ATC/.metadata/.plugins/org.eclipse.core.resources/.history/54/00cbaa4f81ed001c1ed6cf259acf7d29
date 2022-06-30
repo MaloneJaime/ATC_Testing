@@ -1,0 +1,66 @@
+/**
+ * AXI_DMM_core_driver.h
+ *
+ * Author: B. GRIMES
+ * Date: 1 June 2022
+ *
+ * Driver to interact with the DMM+ IP Core
+ */
+
+#ifndef AXI_DMM_CORE_DRIVER
+#define AXI_DMM_CORE_DRIVER
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include <stdbool.h>
+#include <stdint.h>
+
+
+
+
+/**
+ * Enable DMM core
+ *
+ * param base_addr - base memory address of module to interact with
+ */
+void axi_dmm_enable(uint32_t base_addr);
+
+/**
+ * Disable DMM core
+ *
+ * param base_addr - base memory address of module to interact with
+ */
+void axi_dmm_disable(uint32_t base_addr);
+
+
+/**
+ * Get Instantaneous Frequency
+ *
+ * param base_addr - base memory address of module to interact with
+ * param channel - channel number to get (0-7)
+ *
+ * return - (uint32_t) Frequency in Hz
+ */
+uint32_t axi_dmm_get_inst_freq(uint32_t base_addr, uint8_t channel);
+
+
+/**
+ * Get Average Frequency
+ *
+ * param base_addr - base memory address of module to interact with
+ * param channel - channel number to get (0-7)
+ *
+ * return - (uint32_t) Frequency in Hz
+ */
+uint32_t axi_dmm_get_ave_freq(uint32_t base_addr, uint8_t channel);
+
+
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
+

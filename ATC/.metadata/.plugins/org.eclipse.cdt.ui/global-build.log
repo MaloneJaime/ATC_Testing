@@ -1,0 +1,496 @@
+14:09:34 **** Clean-only build of configuration Debug for project test_app ****
+make clean 
+rm -rf  ./src/AXI_mem_access.o ./src/main.o ./src/platform.o  ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.o ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.o  ./noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.o  ./noh-firmware/AXI_I2C_core/drivers/AXI_i2c.o  ./noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.o  ./noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.o  ./noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.o  ./noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.o  ./src/AXI_mem_access.d ./src/main.d ./src/platform.d  ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.d ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.d  ./noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.d  ./noh-firmware/AXI_I2C_core/drivers/AXI_i2c.d  ./noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.d  ./noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.d  ./noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.d  ./noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.d  test_app.elf.size  test_app.elf
+ 
+14:09:35 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s clean 
+make -C psu_cortexa53_0/libsrc/clockps_v1_0/src -s clean 
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/csudma_v1_3/src -s clean 
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s clean 
+make -C psu_cortexa53_0/libsrc/emacps_v3_8/src -s clean 
+make -C psu_cortexa53_0/libsrc/gpiops_v3_4/src -s clean 
+make -C psu_cortexa53_0/libsrc/iicps_v3_8/src -s clean 
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_4/src -s clean 
+make -C psu_cortexa53_0/libsrc/qspipsu_v1_8/src -s clean 
+make -C psu_cortexa53_0/libsrc/resetps_v1_2/src -s clean 
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_6/src -s clean 
+make -C psu_cortexa53_0/libsrc/scugic_v3_10/src -s clean 
+make -C psu_cortexa53_0/libsrc/sdps_v3_6/src -s clean 
+make -C psu_cortexa53_0/libsrc/standalone_v6_8/src -s clean 
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/ttcps_v3_7/src -s clean 
+make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s clean 
+make -C psu_cortexa53_0/libsrc/usbpsu_v1_4/src -s clean 
+make -C psu_cortexa53_0/libsrc/wdtps_v3_1/src -s clean 
+make -C psu_cortexa53_0/libsrc/zdma_v1_6/src -s clean 
+rm -f psu_cortexa53_0/lib/libxil.a
+14:09:38 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in psu_cortexa53_0/libsrc/axipmon_v6_7/src"
+make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/clockps_v1_0/src"
+make -C psu_cortexa53_0/libsrc/clockps_v1_0/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src"
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src"
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/csudma_v1_3/src"
+make -C psu_cortexa53_0/libsrc/csudma_v1_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src"
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/emacps_v3_8/src"
+make -C psu_cortexa53_0/libsrc/emacps_v3_8/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/gpiops_v3_4/src"
+make -C psu_cortexa53_0/libsrc/gpiops_v3_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/iicps_v3_8/src"
+make -C psu_cortexa53_0/libsrc/iicps_v3_8/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/ipipsu_v2_4/src"
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/qspipsu_v1_8/src"
+make -C psu_cortexa53_0/libsrc/qspipsu_v1_8/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/resetps_v1_2/src"
+make -C psu_cortexa53_0/libsrc/resetps_v1_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/rtcpsu_v1_6/src"
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/scugic_v3_10/src"
+make -C psu_cortexa53_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/sdps_v3_6/src"
+make -C psu_cortexa53_0/libsrc/sdps_v3_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/standalone_v6_8/src"
+make -C psu_cortexa53_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src"
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/ttcps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/ttcps_v3_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/uartps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/usbpsu_v1_4/src"
+make -C psu_cortexa53_0/libsrc/usbpsu_v1_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/wdtps_v3_1/src"
+make -C psu_cortexa53_0/libsrc/wdtps_v3_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/zdma_v1_6/src"
+make -C psu_cortexa53_0/libsrc/zdma_v1_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make libs in psu_cortexa53_0/libsrc/axipmon_v6_7/src"
+make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling axipmon"
+aarch64-none-elf-ar: creating ../../../lib/libxil.a
+"Running Make libs in psu_cortexa53_0/libsrc/clockps_v1_0/src"
+make -C psu_cortexa53_0/libsrc/clockps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling clockps"
+"Running Make libs in psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src"
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src"
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling cpu_cortexa53"
+"Running Make libs in psu_cortexa53_0/libsrc/csudma_v1_3/src"
+make -C psu_cortexa53_0/libsrc/csudma_v1_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling csudma"
+"Running Make libs in psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src"
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling ddrcpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/emacps_v3_8/src"
+make -C psu_cortexa53_0/libsrc/emacps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in psu_cortexa53_0/libsrc/gpiops_v3_4/src"
+make -C psu_cortexa53_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in psu_cortexa53_0/libsrc/iicps_v3_8/src"
+make -C psu_cortexa53_0/libsrc/iicps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in psu_cortexa53_0/libsrc/ipipsu_v2_4/src"
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling ipipsu"
+"Running Make libs in psu_cortexa53_0/libsrc/qspipsu_v1_8/src"
+make -C psu_cortexa53_0/libsrc/qspipsu_v1_8/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling qspipsu"
+"Running Make libs in psu_cortexa53_0/libsrc/resetps_v1_2/src"
+make -C psu_cortexa53_0/libsrc/resetps_v1_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling resetps"
+"Running Make libs in psu_cortexa53_0/libsrc/rtcpsu_v1_6/src"
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling rtcpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/scugic_v3_10/src"
+make -C psu_cortexa53_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in psu_cortexa53_0/libsrc/sdps_v3_6/src"
+make -C psu_cortexa53_0/libsrc/sdps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in psu_cortexa53_0/libsrc/standalone_v6_8/src"
+make -C psu_cortexa53_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling standalone A53"
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:52:0:
+xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:59:0:
+xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+translation_table.S:145:2: warning: #warning "There's no DDR_1 in the HW design. MMU translation table marks 32 GB DDR address space as undefined" [-Wcpp]
+ #warning "There's no DDR_1 in the HW design. MMU translation table marks 32 GB DDR address space as undefined"
+  ^~~~~~~
+"Running Make libs in psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src"
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling sysmonpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/ttcps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in psu_cortexa53_0/libsrc/uartps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in psu_cortexa53_0/libsrc/usbpsu_v1_4/src"
+make -C psu_cortexa53_0/libsrc/usbpsu_v1_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling usbpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/wdtps_v3_1/src"
+make -C psu_cortexa53_0/libsrc/wdtps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling wdtps"
+"Running Make libs in psu_cortexa53_0/libsrc/zdma_v1_6/src"
+make -C psu_cortexa53_0/libsrc/zdma_v1_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling zdma"
+'Finished building libraries'
+14:10:20 **** Build of configuration Debug for project test_app ****
+make all 
+Building file: ../src/AXI_mem_access.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"C:\git\noh-firmware\AXI_CAN_core\drivers" -I"C:\git\noh-firmware\AXI_DMM_core\drivers" -I"C:\git\noh-firmware\AXI_ADC_core\drivers" -I"C:\git\noh-firmware\AXI_DAC_core\drivers" -I"C:\git\noh-firmware\AXI_I2C_core\drivers" -I"C:\git\noh-firmware\AXI_UART_core\drivers" -c -fmessage-length=0 -MT"src/AXI_mem_access.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/AXI_mem_access.d" -MT"src/AXI_mem_access.o" -o "src/AXI_mem_access.o" "../src/AXI_mem_access.c"
+../src/AXI_mem_access.c: In function 'axi_read':
+../src/AXI_mem_access.c:12:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   return *((unsigned int*)address);
+            ^
+../src/AXI_mem_access.c: In function 'axi_write':
+../src/AXI_mem_access.c:17:5: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   *((unsigned int*)address) = data;
+     ^
+Finished building: ../src/AXI_mem_access.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"C:\git\noh-firmware\AXI_CAN_core\drivers" -I"C:\git\noh-firmware\AXI_DMM_core\drivers" -I"C:\git\noh-firmware\AXI_ADC_core\drivers" -I"C:\git\noh-firmware\AXI_DAC_core\drivers" -I"C:\git\noh-firmware\AXI_I2C_core\drivers" -I"C:\git\noh-firmware\AXI_UART_core\drivers" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:409:6: warning: "/*" within comment [-Wcomment]
+     //*************************
+       
+../src/main.c:640:8: warning: implicit declaration of function 'usleep'; did you mean 'fseek'? [-Wimplicit-function-declaration]
+        usleep(10000);
+        ^~~~~~
+        fseek
+../src/main.c:317:17: warning: variable 'tx_frame_1' set but not used [-Wunused-but-set-variable]
+  CAN_tx_frame_t tx_frame_1 = {0};
+                 ^~~~~~~~~~
+../src/main.c:313:14: warning: variable 'uart_pause_counter' set but not used [-Wunused-but-set-variable]
+     unsigned uart_pause_counter;
+              ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"C:\git\noh-firmware\AXI_CAN_core\drivers" -I"C:\git\noh-firmware\AXI_DMM_core\drivers" -I"C:\git\noh-firmware\AXI_ADC_core\drivers" -I"C:\git\noh-firmware\AXI_DAC_core\drivers" -I"C:\git\noh-firmware\AXI_I2C_core\drivers" -I"C:\git\noh-firmware\AXI_UART_core\drivers" -c -fmessage-length=0 -MT"src/platform.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: C:/git/noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"C:\git\noh-firmware\AXI_CAN_core\drivers" -I"C:\git\noh-firmware\AXI_DMM_core\drivers" -I"C:\git\noh-firmware\AXI_ADC_core\drivers" -I"C:\git\noh-firmware\AXI_DAC_core\drivers" -I"C:\git\noh-firmware\AXI_I2C_core\drivers" -I"C:\git\noh-firmware\AXI_UART_core\drivers" -c -fmessage-length=0 -MT"noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.d" -MT"noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.o" -o "noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.o" "C:/git/noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.c"
+Finished building: C:/git/noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.c
+ 
+Building file: C:/git/noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"C:\git\noh-firmware\AXI_CAN_core\drivers" -I"C:\git\noh-firmware\AXI_DMM_core\drivers" -I"C:\git\noh-firmware\AXI_ADC_core\drivers" -I"C:\git\noh-firmware\AXI_DAC_core\drivers" -I"C:\git\noh-firmware\AXI_I2C_core\drivers" -I"C:\git\noh-firmware\AXI_UART_core\drivers" -c -fmessage-length=0 -MT"noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.d" -MT"noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.o" -o "noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.o" "C:/git/noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.c"
+C:/git/noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.c: In function 'axi_read_GPIO':
+C:/git/noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.c:12:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   return *((unsigned int*)address);
+            ^
+C:/git/noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.c: In function 'axi_write_GPIO':
+C:/git/noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.c:17:5: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   *((unsigned int*)address) = data;
+     ^
+Finished building: C:/git/noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.c
+ 
+Building file: C:/git/noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"C:\git\noh-firmware\AXI_CAN_core\drivers" -I"C:\git\noh-firmware\AXI_DMM_core\drivers" -I"C:\git\noh-firmware\AXI_ADC_core\drivers" -I"C:\git\noh-firmware\AXI_DAC_core\drivers" -I"C:\git\noh-firmware\AXI_I2C_core\drivers" -I"C:\git\noh-firmware\AXI_UART_core\drivers" -c -fmessage-length=0 -MT"noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.d" -MT"noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.o" -o "noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.o" "C:/git/noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.c"
+Finished building: C:/git/noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.c
+ 
+Building file: C:/git/noh-firmware/AXI_I2C_core/drivers/AXI_i2c.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"C:\git\noh-firmware\AXI_CAN_core\drivers" -I"C:\git\noh-firmware\AXI_DMM_core\drivers" -I"C:\git\noh-firmware\AXI_ADC_core\drivers" -I"C:\git\noh-firmware\AXI_DAC_core\drivers" -I"C:\git\noh-firmware\AXI_I2C_core\drivers" -I"C:\git\noh-firmware\AXI_UART_core\drivers" -c -fmessage-length=0 -MT"noh-firmware/AXI_I2C_core/drivers/AXI_i2c.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"noh-firmware/AXI_I2C_core/drivers/AXI_i2c.d" -MT"noh-firmware/AXI_I2C_core/drivers/AXI_i2c.o" -o "noh-firmware/AXI_I2C_core/drivers/AXI_i2c.o" "C:/git/noh-firmware/AXI_I2C_core/drivers/AXI_i2c.c"
+Finished building: C:/git/noh-firmware/AXI_I2C_core/drivers/AXI_i2c.c
+ 
+Building file: C:/git/noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"C:\git\noh-firmware\AXI_CAN_core\drivers" -I"C:\git\noh-firmware\AXI_DMM_core\drivers" -I"C:\git\noh-firmware\AXI_ADC_core\drivers" -I"C:\git\noh-firmware\AXI_DAC_core\drivers" -I"C:\git\noh-firmware\AXI_I2C_core\drivers" -I"C:\git\noh-firmware\AXI_UART_core\drivers" -c -fmessage-length=0 -MT"noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.d" -MT"noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.o" -o "noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.o" "C:/git/noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.c"
+Finished building: C:/git/noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.c
+ 
+Building file: C:/git/noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"C:\git\noh-firmware\AXI_CAN_core\drivers" -I"C:\git\noh-firmware\AXI_DMM_core\drivers" -I"C:\git\noh-firmware\AXI_ADC_core\drivers" -I"C:\git\noh-firmware\AXI_DAC_core\drivers" -I"C:\git\noh-firmware\AXI_I2C_core\drivers" -I"C:\git\noh-firmware\AXI_UART_core\drivers" -c -fmessage-length=0 -MT"noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.d" -MT"noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.o" -o "noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.o" "C:/git/noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.c"
+Finished building: C:/git/noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.c
+ 
+Building file: C:/git/noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"C:\git\noh-firmware\AXI_CAN_core\drivers" -I"C:\git\noh-firmware\AXI_DMM_core\drivers" -I"C:\git\noh-firmware\AXI_ADC_core\drivers" -I"C:\git\noh-firmware\AXI_DAC_core\drivers" -I"C:\git\noh-firmware\AXI_I2C_core\drivers" -I"C:\git\noh-firmware\AXI_UART_core\drivers" -c -fmessage-length=0 -MT"noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.d" -MT"noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.o" -o "noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.o" "C:/git/noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.c"
+C:/git/noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.c: In function 'CAN_clear_rx_queue':
+C:/git/noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.c:350:14: warning: variable 'reg' set but not used [-Wunused-but-set-variable]
+     uint32_t reg = 0;
+              ^~~
+Finished building: C:/git/noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.c
+ 
+Building file: C:/git/noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"C:\git\noh-firmware\AXI_CAN_core\drivers" -I"C:\git\noh-firmware\AXI_DMM_core\drivers" -I"C:\git\noh-firmware\AXI_ADC_core\drivers" -I"C:\git\noh-firmware\AXI_DAC_core\drivers" -I"C:\git\noh-firmware\AXI_I2C_core\drivers" -I"C:\git\noh-firmware\AXI_UART_core\drivers" -c -fmessage-length=0 -MT"noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.d" -MT"noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.o" -o "noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.o" "C:/git/noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.c"
+C:/git/noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.c: In function 'axi_adc_reset':
+C:/git/noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.c:163:5: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+     usleep(2000);
+     ^~~~~~
+Finished building: C:/git/noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.c
+ 
+Building target: test_app.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -L../../standalone_bsp_0/psu_cortexa53_0/lib -Wl,-Map -Wl,"..\..\linkermap.map" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "test_app.elf"  ./src/AXI_mem_access.o ./src/main.o ./src/platform.o  ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.o ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.o  ./noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.o  ./noh-firmware/AXI_I2C_core/drivers/AXI_i2c.o  ./noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.o  ./noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.o  ./noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.o  ./noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test_app.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size test_app.elf  |tee "test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92296	   4608	  20752	 117656	  1cb98	test_app.elf
+Finished building: test_app.elf.size
+ 
+14:11:14 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:11:35 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:11:46 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:12:27 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:13:42 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:13:59 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:14:46 **** Auto Build of configuration Debug for project test_app ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"C:\git\noh-firmware\AXI_CAN_core\drivers" -I"C:\git\noh-firmware\AXI_DMM_core\drivers" -I"C:\git\noh-firmware\AXI_ADC_core\drivers" -I"C:\git\noh-firmware\AXI_DAC_core\drivers" -I"C:\git\noh-firmware\AXI_I2C_core\drivers" -I"C:\git\noh-firmware\AXI_UART_core\drivers" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:409:6: warning: "/*" within comment [-Wcomment]
+     //*************************
+       
+../src/main.c:640:8: warning: implicit declaration of function 'usleep'; did you mean 'fseek'? [-Wimplicit-function-declaration]
+        usleep(10000);
+        ^~~~~~
+        fseek
+../src/main.c:317:17: warning: variable 'tx_frame_1' set but not used [-Wunused-but-set-variable]
+  CAN_tx_frame_t tx_frame_1 = {0};
+                 ^~~~~~~~~~
+../src/main.c:313:14: warning: variable 'uart_pause_counter' set but not used [-Wunused-but-set-variable]
+     unsigned uart_pause_counter;
+              ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: test_app.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -L../../standalone_bsp_0/psu_cortexa53_0/lib -Wl,-Map -Wl,"..\..\linkermap.map" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "test_app.elf"  ./src/AXI_mem_access.o ./src/main.o ./src/platform.o  ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.o ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.o  ./noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.o  ./noh-firmware/AXI_I2C_core/drivers/AXI_i2c.o  ./noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.o  ./noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.o  ./noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.o  ./noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test_app.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size test_app.elf  |tee "test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92296	   4608	  20752	 117656	  1cb98	test_app.elf
+Finished building: test_app.elf.size
+ 
+14:14:54 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:15:04 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:15:10 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:15:55 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:16:07 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:16:36 **** Auto Build of configuration Debug for project test_app ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"C:\git\noh-firmware\AXI_CAN_core\drivers" -I"C:\git\noh-firmware\AXI_DMM_core\drivers" -I"C:\git\noh-firmware\AXI_ADC_core\drivers" -I"C:\git\noh-firmware\AXI_DAC_core\drivers" -I"C:\git\noh-firmware\AXI_I2C_core\drivers" -I"C:\git\noh-firmware\AXI_UART_core\drivers" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:409:6: warning: "/*" within comment [-Wcomment]
+     //*************************
+       
+../src/main.c:640:8: warning: implicit declaration of function 'usleep'; did you mean 'fseek'? [-Wimplicit-function-declaration]
+        usleep(10000);
+        ^~~~~~
+        fseek
+../src/main.c:317:17: warning: variable 'tx_frame_1' set but not used [-Wunused-but-set-variable]
+  CAN_tx_frame_t tx_frame_1 = {0};
+                 ^~~~~~~~~~
+../src/main.c:313:14: warning: variable 'uart_pause_counter' set but not used [-Wunused-but-set-variable]
+     unsigned uart_pause_counter;
+              ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: test_app.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -L../../standalone_bsp_0/psu_cortexa53_0/lib -Wl,-Map -Wl,"..\..\linkermap.map" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "test_app.elf"  ./src/AXI_mem_access.o ./src/main.o ./src/platform.o  ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.o ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.o  ./noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.o  ./noh-firmware/AXI_I2C_core/drivers/AXI_i2c.o  ./noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.o  ./noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.o  ./noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.o  ./noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test_app.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size test_app.elf  |tee "test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92296	   4608	  20752	 117656	  1cb98	test_app.elf
+Finished building: test_app.elf.size
+ 
+14:16:43 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:16:54 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:19:39 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:22:38 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:25:02 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:25:12 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:25:18 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:25:26 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+15:02:05 **** Auto Build of configuration Debug for project test_app ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"C:\git\noh-firmware\AXI_CAN_core\drivers" -I"C:\git\noh-firmware\AXI_DMM_core\drivers" -I"C:\git\noh-firmware\AXI_ADC_core\drivers" -I"C:\git\noh-firmware\AXI_DAC_core\drivers" -I"C:\git\noh-firmware\AXI_I2C_core\drivers" -I"C:\git\noh-firmware\AXI_UART_core\drivers" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:409:6: warning: "/*" within comment [-Wcomment]
+     //*************************
+       
+../src/main.c:640:8: warning: implicit declaration of function 'usleep'; did you mean 'fseek'? [-Wimplicit-function-declaration]
+        usleep(10000);
+        ^~~~~~
+        fseek
+../src/main.c:317:17: warning: variable 'tx_frame_1' set but not used [-Wunused-but-set-variable]
+  CAN_tx_frame_t tx_frame_1 = {0};
+                 ^~~~~~~~~~
+../src/main.c:313:14: warning: variable 'uart_pause_counter' set but not used [-Wunused-but-set-variable]
+     unsigned uart_pause_counter;
+              ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: test_app.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -L../../standalone_bsp_0/psu_cortexa53_0/lib -Wl,-Map -Wl,"..\..\linkermap.map" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "test_app.elf"  ./src/AXI_mem_access.o ./src/main.o ./src/platform.o  ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.o ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.o  ./noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.o  ./noh-firmware/AXI_I2C_core/drivers/AXI_i2c.o  ./noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.o  ./noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.o  ./noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.o  ./noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test_app.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size test_app.elf  |tee "test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92296	   4608	  20752	 117656	  1cb98	test_app.elf
+Finished building: test_app.elf.size
+ 
+15:02:18 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+15:02:36 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+15:04:28 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+15:06:33 **** Auto Build of configuration Debug for project test_app ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"C:\git\noh-firmware\AXI_CAN_core\drivers" -I"C:\git\noh-firmware\AXI_DMM_core\drivers" -I"C:\git\noh-firmware\AXI_ADC_core\drivers" -I"C:\git\noh-firmware\AXI_DAC_core\drivers" -I"C:\git\noh-firmware\AXI_I2C_core\drivers" -I"C:\git\noh-firmware\AXI_UART_core\drivers" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:409:6: warning: "/*" within comment [-Wcomment]
+     //*************************
+       
+../src/main.c:640:8: warning: implicit declaration of function 'usleep'; did you mean 'fseek'? [-Wimplicit-function-declaration]
+        usleep(10000);
+        ^~~~~~
+        fseek
+../src/main.c:317:17: warning: variable 'tx_frame_1' set but not used [-Wunused-but-set-variable]
+  CAN_tx_frame_t tx_frame_1 = {0};
+                 ^~~~~~~~~~
+../src/main.c:313:14: warning: variable 'uart_pause_counter' set but not used [-Wunused-but-set-variable]
+     unsigned uart_pause_counter;
+              ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: test_app.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -L../../standalone_bsp_0/psu_cortexa53_0/lib -Wl,-Map -Wl,"..\..\linkermap.map" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "test_app.elf"  ./src/AXI_mem_access.o ./src/main.o ./src/platform.o  ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.o ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.o  ./noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.o  ./noh-firmware/AXI_I2C_core/drivers/AXI_i2c.o  ./noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.o  ./noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.o  ./noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.o  ./noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test_app.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size test_app.elf  |tee "test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92296	   4608	  20752	 117656	  1cb98	test_app.elf
+Finished building: test_app.elf.size
+ 
+15:07:39 **** Auto Build of configuration Debug for project test_app ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"C:\git\noh-firmware\AXI_CAN_core\drivers" -I"C:\git\noh-firmware\AXI_DMM_core\drivers" -I"C:\git\noh-firmware\AXI_ADC_core\drivers" -I"C:\git\noh-firmware\AXI_DAC_core\drivers" -I"C:\git\noh-firmware\AXI_I2C_core\drivers" -I"C:\git\noh-firmware\AXI_UART_core\drivers" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:409:6: warning: "/*" within comment [-Wcomment]
+     //*************************
+       
+../src/main.c:640:8: warning: implicit declaration of function 'usleep'; did you mean 'fseek'? [-Wimplicit-function-declaration]
+        usleep(10000);
+        ^~~~~~
+        fseek
+../src/main.c:317:17: warning: variable 'tx_frame_1' set but not used [-Wunused-but-set-variable]
+  CAN_tx_frame_t tx_frame_1 = {0};
+                 ^~~~~~~~~~
+../src/main.c:313:14: warning: variable 'uart_pause_counter' set but not used [-Wunused-but-set-variable]
+     unsigned uart_pause_counter;
+              ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: test_app.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -L../../standalone_bsp_0/psu_cortexa53_0/lib -Wl,-Map -Wl,"..\..\linkermap.map" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "test_app.elf"  ./src/AXI_mem_access.o ./src/main.o ./src/platform.o  ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.o ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.o  ./noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.o  ./noh-firmware/AXI_I2C_core/drivers/AXI_i2c.o  ./noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.o  ./noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.o  ./noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.o  ./noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test_app.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size test_app.elf  |tee "test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92320	   4608	  20792	 117720	  1cbd8	test_app.elf
+Finished building: test_app.elf.size
+ 
+15:07:47 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.
+15:10:57 **** Incremental Build of configuration Debug for project test_app ****
+make all 
+make: Nothing to be done for 'all'.

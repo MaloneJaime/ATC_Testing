@@ -1,0 +1,90 @@
+/**
+ * AXI_DMM_core_driver.c
+ *
+ * Author: B. GRIMES
+ * Date: 1 June 2022
+ *
+ * Driver to interact with the DMM+ IP Core
+ */
+
+
+#include <stdlib.h>
+#include <time.h>
+
+#include "AXI_DMM_core_driver.h"
+#include "AXI_mem_access.h"
+
+// Register offsets
+
+#define DMM_INST_FREQ_CH0_ADDR			0x00000020
+#define DMM_INST_FREQ_CH1_ADDR			0x00000024
+#define DMM_INST_FREQ_CH2_ADDR			0x00000028
+#define DMM_INST_FREQ_CH3_ADDR			0x0000002C
+#define DMM_INST_FREQ_CH4_ADDR			0x00000030
+#define DMM_INST_FREQ_CH5_ADDR			0x00000034
+#define DMM_INST_FREQ_CH6_ADDR			0x00000038
+#define DMM_INST_FREQ_CH7_ADDR			0x0000003C
+
+
+#define DMM_AVE_FREQ_CH0_ADDR			0x00000040
+#define DMM_AVE_FREQ_CH1_ADDR			0x00000044
+#define DMM_AVE_FREQ_CH2_ADDR			0x00000048
+#define DMM_AVE_FREQ_CH3_ADDR			0x0000004C
+#define DMM_AVE_FREQ_CH4_ADDR			0x00000050
+#define DMM_AVE_FREQ_CH5_ADDR			0x00000054
+#define DMM_AVE_FREQ_CH6_ADDR			0x00000058
+#define DMM_AVE_FREQ_CH7_ADDR			0x0000005C
+
+#define CORE_EN_ADDR        			0x000007FC
+
+
+
+/**
+ * Enable DMM core
+ *
+ * param base_addr - base memory address of module to interact with
+ */
+void axi_dmm_enable(uint32_t base_addr)
+{
+    axi_write(base_addr + CORE_EN_ADDR, 1);
+}
+
+/**
+ * Disable DMM core
+ *
+ * param base_addr - base memory address of module to interact with
+ */
+void axi_dmm_disable(uint32_t base_addr)
+{
+    axi_write(base_addr + CORE_EN_ADDR, 0);
+}
+
+/**
+ * Get Instantaneous Frequency
+ *
+ * param base_addr - base memory address of module to interact with
+ * param channel - channel number to get (0-7)
+ *
+ * return - (uint32_t) Frequency in Hz
+ */
+uint32_t axi_dmm_get_inst_freq(uint32_t base_addr, uint8_t channel)
+{
+    return axi_read(base_addr + DMM_INST_FREQ_CH0_ADDR + ((uint32_t)(4*channel)));
+}
+
+/**
+ * Get Average Frequency
+ *
+ * param base_addr - base memory address of module to interact with
+ * param channel - channel number to get (0-7)
+ *
+ * return - (uint32_t) Frequency in Hz
+ */
+uint32_t axi_dmm_get_ave_freq(uint32_t base_addr, uint8_t channel)
+{
+    return axi_read(base_addr + DMM_AVE_FREQ_CH0_ADDR + ((uint32_t)(4*channel)));
+}
+
+//***********************************
+//***********************************
+//***********************************
