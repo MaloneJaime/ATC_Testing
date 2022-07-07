@@ -550,152 +550,153 @@ LOAD c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/li
  .text          0x0000000000000da8       0x40 ./src/AXI_mem_access.o
                 0x0000000000000da8                axi_read
                 0x0000000000000dc0                axi_write
- .text          0x0000000000000de8     0x1608 ./src/main.o
+ .text          0x0000000000000de8     0x15ec ./src/main.o
                 0x0000000000000de8                pars_int_arg_val
                 0x0000000000000e48                DAC_voltage_convert
                 0x0000000000000eec                sqrt64
                 0x0000000000000f90                main
- .text          0x00000000000023f0       0x4c ./src/platform.o
-                0x00000000000023f0                enable_caches
-                0x00000000000023f8                disable_caches
-                0x0000000000002400                init_uart
-                0x0000000000002408                init_platform
-                0x0000000000002424                cleanup_platform
- .text          0x000000000000243c      0x770 ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.o
-                0x000000000000243c                axi_simple_gpio_init
-                0x00000000000024c8                axi_simple_gpio_set
-                0x0000000000002b94                axi_simple_gpio_read
- .text          0x0000000000002bac       0x40 ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.o
-                0x0000000000002bac                axi_read_GPIO
-                0x0000000000002bc4                axi_write_GPIO
- .text          0x0000000000002bec      0x320 ./noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.o
-                0x0000000000002bec                axi_uart_init
-                0x0000000000002ce8                axi_uart_set_aux_gpos
-                0x0000000000002d14                axi_uart_send
-                0x0000000000002da0                axi_uart_read
-                0x0000000000002e4c                axi_uart_get_tx_buf_level
-                0x0000000000002e6c                axi_uart_get_rx_buf_level
-                0x0000000000002e8c                axi_uart_clear_rx_buf
-                0x0000000000002eec                axi_uart_test
- .text          0x0000000000002f0c      0x378 ./noh-firmware/AXI_I2C_core/drivers/AXI_i2c.o
-                0x0000000000002f0c                axi_i2c_reset
-                0x0000000000002f54                axi_i2c_set_clk_rate
-                0x0000000000002f94                axi_i2c_read
-                0x00000000000030f8                axi_i2c_write
-                0x0000000000003230                axi_i2c_clear_rx_queue
-                0x0000000000003244                axi_i2c_set_AUX_bits
- .text          0x0000000000003284      0x120 ./noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.o
-                0x0000000000003284                axi_dmm_enable
-                0x00000000000032ac                axi_dmm_disable
-                0x00000000000032d4                axi_dmm_get_inst_freq
-                0x0000000000003314                axi_dmm_get_ave_freq
-                0x0000000000003344                axi_dmm_get_inst_RMS
-                0x0000000000003374                axi_dmm_get_ave_RMS
- .text          0x00000000000033a4      0x300 ./noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.o
-                0x00000000000033a4                axi_dac_reset
-                0x00000000000033dc                axi_dac_load_data
-                0x0000000000003494                axi_dac_enable
-                0x0000000000003564                axi_dac_load_core_timer
-                0x00000000000035a0                axi_dac_load_ch_timer
-                0x00000000000035f0                axi_dac_load_ch_cal
- .text          0x00000000000036a4      0x708 ./noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.o
-                0x00000000000036a4                CAN_init
-                0x0000000000003704                Monitor_mode
-                0x0000000000003750                CAN_set_clk_div
-                0x0000000000003788                CAN_reset
-                0x00000000000037d4                CAN_set_ctrl_flags
-                0x0000000000003800                CAN_queue_frame
-                0x00000000000039e4                CAN_retrive_frame
-                0x0000000000003bec                CAN_tx_fifo_is_full
-                0x0000000000003c28                CAN_rx_fifo_is_full
-                0x0000000000003c68                CAN_tx_fifo_is_empty
-                0x0000000000003ca4                CAN_rx_fifo_is_empty
-                0x0000000000003ce4                CAN_tx_fifo_level
-                0x0000000000003d14                CAN_rx_fifo_level
-                0x0000000000003d48                CAN_clear_rx_queue
- .text          0x0000000000003dac      0xbb4 ./noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.o
-                0x0000000000003dac                ATC_ADC_Calibration_Dat_new
-                0x0000000000003f48                ADC_Ch_Setup_Dat_new
-                0x0000000000003fe0                axi_adc_disable
-                0x0000000000004008                axi_adc_enable
-                0x0000000000004030                axi_adc_reset
-                0x0000000000004078                axi_adc_get_status
-                0x00000000000040b8                axi_adc_set_channel_switch
-                0x0000000000004174                axi_adc_channel_enable
-                0x00000000000041b4                axi_adc_setup_channel
-                0x00000000000043c0                axi_adc_set_trigger_enable
-                0x0000000000004414                axi_adc_get_frequency
-                0x000000000000445c                mV_to_adc_2s_comp
-                0x000000000000453c                lookup_cal_values
- .text          0x0000000000004960        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(asm_vectors.o)
- .text          0x0000000000004960        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(boot.o)
- .text          0x0000000000004960        0x4 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(initialise_monitor_handles.o)
-                0x0000000000004960                initialise_monitor_handles
- .text          0x0000000000004964        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(translation_table.o)
- *fill*         0x0000000000004964        0x4 
- .text          0x0000000000004968       0x40 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(vectors.o)
-                0x0000000000004968                FIQInterrupt
-                0x0000000000004978                IRQInterrupt
-                0x0000000000004988                SynchronousInterrupt
-                0x0000000000004998                SErrorInterrupt
- .text          0x00000000000049a8       0x98 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil-crt0.o)
-                0x00000000000049c8                _startup
- .text          0x0000000000004a40      0x644 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil_cache.o)
-                0x0000000000004a40                Xil_DCacheDisable
-                0x0000000000004b70                Xil_DCacheInvalidate
-                0x0000000000004c90                Xil_DCacheEnable
-                0x0000000000004cb8                Xil_DCacheInvalidateLine
-                0x0000000000004cf0                Xil_DCacheInvalidateRange
-                0x0000000000004d30                Xil_DCacheFlush
-                0x0000000000004e50                Xil_DCacheFlushLine
-                0x0000000000004e88                Xil_DCacheFlushRange
-                0x0000000000004f58                Xil_ICacheEnable
-                0x0000000000004f90                Xil_ICacheDisable
-                0x0000000000004fc8                Xil_ICacheInvalidate
-                0x0000000000004ff0                Xil_ICacheInvalidateLine
-                0x0000000000005018                Xil_ICacheInvalidateRange
-                0x0000000000005068                Xil_ConfigureL1Prefetch
- *fill*         0x0000000000005084        0x4 
- .text          0x0000000000005088       0x8c ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil_exception.o)
-                0x0000000000005090                Xil_SyncAbortHandler
-                0x0000000000005098                Xil_SErrorAbortHandler
-                0x00000000000050a0                Xil_ExceptionInit
-                0x00000000000050a8                Xil_ExceptionRegisterHandler
-                0x00000000000050c8                Xil_GetExceptionRegisterHandler
-                0x00000000000050f0                Xil_ExceptionRemoveHandler
- *fill*         0x0000000000005114        0x4 
- .text          0x0000000000005118        0xc ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil_sleepcommon.o)
-                0x0000000000005118                sleep
-                0x0000000000005120                usleep
- *fill*         0x0000000000005124        0x4 
- .text          0x0000000000005128       0x8c ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(sleep.o)
-                0x0000000000005128                usleep_A53
-                0x0000000000005170                sleep_A53
- *fill*         0x00000000000051b4        0x4 
- .text          0x00000000000051b8       0x6c ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xtime_l.o)
-                0x00000000000051b8                XTime_StartTimer
-                0x00000000000051e8                XTime_SetTime
-                0x00000000000051f0                XTime_GetTime
+ .text          0x00000000000023d4       0x4c ./src/platform.o
+                0x00000000000023d4                enable_caches
+                0x00000000000023dc                disable_caches
+                0x00000000000023e4                init_uart
+                0x00000000000023ec                init_platform
+                0x0000000000002408                cleanup_platform
+ .text          0x0000000000002420      0x770 ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.o
+                0x0000000000002420                axi_simple_gpio_init
+                0x00000000000024ac                axi_simple_gpio_set
+                0x0000000000002b78                axi_simple_gpio_read
+ .text          0x0000000000002b90       0x40 ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.o
+                0x0000000000002b90                axi_read_GPIO
+                0x0000000000002ba8                axi_write_GPIO
+ .text          0x0000000000002bd0      0x320 ./noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.o
+                0x0000000000002bd0                axi_uart_init
+                0x0000000000002ccc                axi_uart_set_aux_gpos
+                0x0000000000002cf8                axi_uart_send
+                0x0000000000002d84                axi_uart_read
+                0x0000000000002e30                axi_uart_get_tx_buf_level
+                0x0000000000002e50                axi_uart_get_rx_buf_level
+                0x0000000000002e70                axi_uart_clear_rx_buf
+                0x0000000000002ed0                axi_uart_test
+ .text          0x0000000000002ef0      0x378 ./noh-firmware/AXI_I2C_core/drivers/AXI_i2c.o
+                0x0000000000002ef0                axi_i2c_reset
+                0x0000000000002f38                axi_i2c_set_clk_rate
+                0x0000000000002f78                axi_i2c_read
+                0x00000000000030dc                axi_i2c_write
+                0x0000000000003214                axi_i2c_clear_rx_queue
+                0x0000000000003228                axi_i2c_set_AUX_bits
+ .text          0x0000000000003268      0x120 ./noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.o
+                0x0000000000003268                axi_dmm_enable
+                0x0000000000003290                axi_dmm_disable
+                0x00000000000032b8                axi_dmm_get_inst_freq
+                0x00000000000032f8                axi_dmm_get_ave_freq
+                0x0000000000003328                axi_dmm_get_inst_RMS
+                0x0000000000003358                axi_dmm_get_ave_RMS
+ .text          0x0000000000003388      0x300 ./noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.o
+                0x0000000000003388                axi_dac_reset
+                0x00000000000033c0                axi_dac_load_data
+                0x0000000000003478                axi_dac_enable
+                0x0000000000003548                axi_dac_load_core_timer
+                0x0000000000003584                axi_dac_load_ch_timer
+                0x00000000000035d4                axi_dac_load_ch_cal
+ .text          0x0000000000003688      0x708 ./noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.o
+                0x0000000000003688                CAN_init
+                0x00000000000036e8                Monitor_mode
+                0x0000000000003734                CAN_set_clk_div
+                0x000000000000376c                CAN_reset
+                0x00000000000037b8                CAN_set_ctrl_flags
+                0x00000000000037e4                CAN_queue_frame
+                0x00000000000039c8                CAN_retrive_frame
+                0x0000000000003bd0                CAN_tx_fifo_is_full
+                0x0000000000003c0c                CAN_rx_fifo_is_full
+                0x0000000000003c4c                CAN_tx_fifo_is_empty
+                0x0000000000003c88                CAN_rx_fifo_is_empty
+                0x0000000000003cc8                CAN_tx_fifo_level
+                0x0000000000003cf8                CAN_rx_fifo_level
+                0x0000000000003d2c                CAN_clear_rx_queue
+ .text          0x0000000000003d90      0xbb4 ./noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.o
+                0x0000000000003d90                ATC_ADC_Calibration_Dat_new
+                0x0000000000003f2c                ADC_Ch_Setup_Dat_new
+                0x0000000000003fc4                axi_adc_disable
+                0x0000000000003fec                axi_adc_enable
+                0x0000000000004014                axi_adc_reset
+                0x000000000000405c                axi_adc_get_status
+                0x000000000000409c                axi_adc_set_channel_switch
+                0x0000000000004158                axi_adc_channel_enable
+                0x0000000000004198                axi_adc_setup_channel
+                0x00000000000043a4                axi_adc_set_trigger_enable
+                0x00000000000043f8                axi_adc_get_frequency
+                0x0000000000004440                mV_to_adc_2s_comp
+                0x0000000000004520                lookup_cal_values
+ .text          0x0000000000004944        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(asm_vectors.o)
+ .text          0x0000000000004944        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(boot.o)
+ *fill*         0x0000000000004944        0x4 
+ .text          0x0000000000004948        0x4 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(initialise_monitor_handles.o)
+                0x0000000000004948                initialise_monitor_handles
+ .text          0x000000000000494c        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(translation_table.o)
+ *fill*         0x000000000000494c        0x4 
+ .text          0x0000000000004950       0x40 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(vectors.o)
+                0x0000000000004950                FIQInterrupt
+                0x0000000000004960                IRQInterrupt
+                0x0000000000004970                SynchronousInterrupt
+                0x0000000000004980                SErrorInterrupt
+ .text          0x0000000000004990       0x98 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil-crt0.o)
+                0x00000000000049b0                _startup
+ .text          0x0000000000004a28      0x644 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil_cache.o)
+                0x0000000000004a28                Xil_DCacheDisable
+                0x0000000000004b58                Xil_DCacheInvalidate
+                0x0000000000004c78                Xil_DCacheEnable
+                0x0000000000004ca0                Xil_DCacheInvalidateLine
+                0x0000000000004cd8                Xil_DCacheInvalidateRange
+                0x0000000000004d18                Xil_DCacheFlush
+                0x0000000000004e38                Xil_DCacheFlushLine
+                0x0000000000004e70                Xil_DCacheFlushRange
+                0x0000000000004f40                Xil_ICacheEnable
+                0x0000000000004f78                Xil_ICacheDisable
+                0x0000000000004fb0                Xil_ICacheInvalidate
+                0x0000000000004fd8                Xil_ICacheInvalidateLine
+                0x0000000000005000                Xil_ICacheInvalidateRange
+                0x0000000000005050                Xil_ConfigureL1Prefetch
+ *fill*         0x000000000000506c        0x4 
+ .text          0x0000000000005070       0x8c ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil_exception.o)
+                0x0000000000005078                Xil_SyncAbortHandler
+                0x0000000000005080                Xil_SErrorAbortHandler
+                0x0000000000005088                Xil_ExceptionInit
+                0x0000000000005090                Xil_ExceptionRegisterHandler
+                0x00000000000050b0                Xil_GetExceptionRegisterHandler
+                0x00000000000050d8                Xil_ExceptionRemoveHandler
+ *fill*         0x00000000000050fc        0x4 
+ .text          0x0000000000005100        0xc ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil_sleepcommon.o)
+                0x0000000000005100                sleep
+                0x0000000000005108                usleep
+ *fill*         0x000000000000510c        0x4 
+ .text          0x0000000000005110       0x8c ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(sleep.o)
+                0x0000000000005110                usleep_A53
+                0x0000000000005158                sleep_A53
+ *fill*         0x000000000000519c        0x4 
+ .text          0x00000000000051a0       0x6c ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xtime_l.o)
+                0x00000000000051a0                XTime_StartTimer
+                0x00000000000051d0                XTime_SetTime
+                0x00000000000051d8                XTime_GetTime
+ *fill*         0x000000000000520c        0x4 
+ .text          0x0000000000005210       0x14 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-atexit.o)
+                0x0000000000005210                atexit
  *fill*         0x0000000000005224        0x4 
- .text          0x0000000000005228       0x14 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-atexit.o)
-                0x0000000000005228                atexit
- *fill*         0x000000000000523c        0x4 
- .text          0x0000000000005240       0x34 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-exit.o)
-                0x0000000000005240                exit
- *fill*         0x0000000000005274        0x4 
- .text          0x0000000000005278       0x44 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-fini.o)
-                0x0000000000005278                __libc_fini_array
- .text          0x00000000000052bc        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-impure.o)
- *fill*         0x00000000000052bc        0x4 
- .text          0x00000000000052c0       0x8c c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-init.o)
-                0x00000000000052c0                __libc_init_array
- *fill*         0x000000000000534c        0x4 
- .text          0x0000000000005350       0x20 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-malloc.o)
-                0x0000000000005350                malloc
-                0x0000000000005360                free
- .text          0x0000000000005370      0x840 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-mallocr.o)
-                0x0000000000005370                _malloc_r
- *fill*         0x0000000000005bb0       0x10 
+ .text          0x0000000000005228       0x34 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-exit.o)
+                0x0000000000005228                exit
+ *fill*         0x000000000000525c        0x4 
+ .text          0x0000000000005260       0x44 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-fini.o)
+                0x0000000000005260                __libc_fini_array
+ .text          0x00000000000052a4        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-impure.o)
+ *fill*         0x00000000000052a4        0x4 
+ .text          0x00000000000052a8       0x8c c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-init.o)
+                0x00000000000052a8                __libc_init_array
+ *fill*         0x0000000000005334        0x4 
+ .text          0x0000000000005338       0x20 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-malloc.o)
+                0x0000000000005338                malloc
+                0x0000000000005348                free
+ .text          0x0000000000005358      0x840 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-mallocr.o)
+                0x0000000000005358                _malloc_r
+ *fill*         0x0000000000005b98       0x28 
  .text          0x0000000000005bc0      0x16c c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-memcpy.o)
                 0x0000000000005bc0                memcpy
  *fill*         0x0000000000005d2c       0x14 
@@ -960,212 +961,212 @@ LOAD c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/li
 .note-ABI-tag
  *(.note-ABI-tag)
 
-.rodata         0x00000000000100d8      0x7f0
+.rodata         0x00000000000100d8      0x7d0
                 0x0000000000010100                . = ALIGN (0x40)
  *fill*         0x00000000000100d8       0x28 
                 0x0000000000010100                __rodata_start = .
  *(.rodata)
- .rodata        0x0000000000010100      0x2d0 ./src/main.o
+ .rodata        0x0000000000010100      0x2b0 ./src/main.o
                 0x0000000000010100                sawtooth_wave_mV
                 0x0000000000010158                square_wave_mV
                 0x0000000000010160                sine_wave_mV
- .rodata        0x00000000000103d0        0x8 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-impure.o)
-                0x00000000000103d0                _global_impure_ptr
- .rodata        0x00000000000103d8       0xd8 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-vfprintf.o)
- .rodata        0x00000000000104b0      0x101 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-ctype_.o)
-                0x00000000000104b0                _ctype_
- *fill*         0x00000000000105b1        0x7 
- .rodata        0x00000000000105b8      0x128 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-mprec.o)
-                0x00000000000105c8                __mprec_tens
-                0x0000000000010690                __mprec_tinytens
-                0x00000000000106b8                __mprec_bigtens
- .rodata        0x00000000000106e0       0xd8 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-vfiprintf.o)
+ .rodata        0x00000000000103b0        0x8 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-impure.o)
+                0x00000000000103b0                _global_impure_ptr
+ .rodata        0x00000000000103b8       0xd8 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-vfprintf.o)
+ .rodata        0x0000000000010490      0x101 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-ctype_.o)
+                0x0000000000010490                _ctype_
+ *fill*         0x0000000000010591        0x7 
+ .rodata        0x0000000000010598      0x128 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-mprec.o)
+                0x00000000000105a8                __mprec_tens
+                0x0000000000010670                __mprec_tinytens
+                0x0000000000010698                __mprec_bigtens
+ .rodata        0x00000000000106c0       0xd8 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-vfiprintf.o)
  *(.rodata.*)
- .rodata.cst8   0x00000000000107b8       0x20 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtbegin.o
- .rodata.cst8   0x00000000000107d8       0x10 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-fini.o)
+ .rodata.cst8   0x0000000000010798       0x20 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtbegin.o
+ .rodata.cst8   0x00000000000107b8       0x10 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-fini.o)
  .rodata.str1.8
-                0x00000000000107e8        0x2 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-impure.o)
- *fill*         0x00000000000107ea        0x6 
- .rodata.cst8   0x00000000000107f0       0x20 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-init.o)
+                0x00000000000107c8        0x2 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-impure.o)
+ *fill*         0x00000000000107ca        0x6 
+ .rodata.cst8   0x00000000000107d0       0x20 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-init.o)
  .rodata.str1.8
-                0x0000000000010810        0x2 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-puts.o)
- *fill*         0x0000000000010812        0x6 
+                0x00000000000107f0        0x2 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-puts.o)
+ *fill*         0x00000000000107f2        0x6 
  .rodata.str1.8
-                0x0000000000010818       0x5a c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-vfprintf.o)
- *fill*         0x0000000000010872        0x6 
- .rodata.cst8   0x0000000000010878        0x8 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-__atexit.o)
- .rodata.cst8   0x0000000000010880        0x8 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-__call_atexit.o)
- .rodata.cst8   0x0000000000010888       0x18 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-dtoa.o)
+                0x00000000000107f8       0x5a c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-vfprintf.o)
+ *fill*         0x0000000000010852        0x6 
+ .rodata.cst8   0x0000000000010858        0x8 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-__atexit.o)
+ .rodata.cst8   0x0000000000010860        0x8 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-__call_atexit.o)
+ .rodata.cst8   0x0000000000010868       0x18 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-dtoa.o)
  .rodata.str1.8
-                0x00000000000108a0       0x14 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-dtoa.o)
+                0x0000000000010880       0x14 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-dtoa.o)
                                          0x1a (size before relaxing)
- *fill*         0x00000000000108b4        0x4 
+ *fill*         0x0000000000010894        0x4 
  .rodata.str1.8
-                0x00000000000108b8       0x10 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-locale.o)
+                0x0000000000010898       0x10 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-locale.o)
                                          0x1a (size before relaxing)
  .rodata.str1.8
-                0x00000000000108c8       0x37 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-vfiprintf.o)
+                0x00000000000108a8       0x37 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-vfiprintf.o)
  *(.gnu.linkonce.r.*)
-                0x00000000000108ff                __rodata_end = .
+                0x00000000000108df                __rodata_end = .
 
-.rodata1        0x00000000000108c8       0x38
-                0x0000000000010900                . = ALIGN (0x40)
- *fill*         0x00000000000108c8       0x38 
-                0x0000000000010900                __rodata1_start = .
+.rodata1        0x00000000000108a8       0x18
+                0x00000000000108c0                . = ALIGN (0x40)
+ *fill*         0x00000000000108a8       0x18 
+                0x00000000000108c0                __rodata1_start = .
  *(.rodata1)
  *(.rodata1.*)
-                0x0000000000010900                __rodata1_end = .
+                0x00000000000108c0                __rodata1_end = .
 
-.sdata2         0x0000000000010900        0x0
-                0x0000000000010900                . = ALIGN (0x40)
-                0x0000000000010900                __sdata2_start = .
+.sdata2         0x00000000000108c0        0x0
+                0x00000000000108c0                . = ALIGN (0x40)
+                0x00000000000108c0                __sdata2_start = .
  *(.sdata2)
  *(.sdata2.*)
  *(.gnu.linkonce.s2.*)
-                0x0000000000010900                __sdata2_end = .
+                0x00000000000108c0                __sdata2_end = .
 
-.sbss2          0x0000000000010900        0x0
-                0x0000000000010900                . = ALIGN (0x40)
-                0x0000000000010900                __sbss2_start = .
+.sbss2          0x00000000000108c0        0x0
+                0x00000000000108c0                . = ALIGN (0x40)
+                0x00000000000108c0                __sbss2_start = .
  *(.sbss2)
  *(.sbss2.*)
  *(.gnu.linkonce.sb2.*)
-                0x0000000000010900                __sbss2_end = .
+                0x00000000000108c0                __sbss2_end = .
 
-.data           0x0000000000010900     0x11b8
-                0x0000000000010900                . = ALIGN (0x40)
-                0x0000000000010900                __data_start = .
+.data           0x00000000000108c0     0x11b8
+                0x00000000000108c0                . = ALIGN (0x40)
+                0x00000000000108c0                __data_start = .
  *(.data)
- .data          0x0000000000010900        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crti.o
- .data          0x0000000000010900        0x8 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtbegin.o
-                0x0000000000010900                __dso_handle
- .data          0x0000000000010908      0x128 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib/crt0.o
-                0x0000000000010918                __stack_base__
- .data          0x0000000000010a30        0x0 ./src/AXI_mem_access.o
- .data          0x0000000000010a30        0x0 ./src/main.o
- .data          0x0000000000010a30        0x0 ./src/platform.o
- .data          0x0000000000010a30        0x0 ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.o
- .data          0x0000000000010a30        0x0 ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.o
- .data          0x0000000000010a30        0x0 ./noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.o
- .data          0x0000000000010a30        0x0 ./noh-firmware/AXI_I2C_core/drivers/AXI_i2c.o
- .data          0x0000000000010a30        0x0 ./noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.o
- .data          0x0000000000010a30        0x0 ./noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.o
- .data          0x0000000000010a30        0x0 ./noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.o
- .data          0x0000000000010a30        0x0 ./noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.o
- .data          0x0000000000010a30        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(asm_vectors.o)
- .data          0x0000000000010a30        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(boot.o)
- .data          0x0000000000010a30        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(initialise_monitor_handles.o)
- .data          0x0000000000010a30        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(translation_table.o)
- .data          0x0000000000010a30        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(vectors.o)
- .data          0x0000000000010a30        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil-crt0.o)
- .data          0x0000000000010a30        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil_cache.o)
- .data          0x0000000000010a30       0x60 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil_exception.o)
-                0x0000000000010a30                XExc_VectorTable
- .data          0x0000000000010a90        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil_sleepcommon.o)
- .data          0x0000000000010a90        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(sleep.o)
- .data          0x0000000000010a90        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xtime_l.o)
- .data          0x0000000000010a90        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-atexit.o)
- .data          0x0000000000010a90        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-exit.o)
- .data          0x0000000000010a90        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-fini.o)
- .data          0x0000000000010a90      0x750 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-impure.o)
-                0x0000000000010a90                _impure_ptr
- .data          0x00000000000111e0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-init.o)
- .data          0x00000000000111e0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-malloc.o)
- .data          0x00000000000111e0      0x820 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-mallocr.o)
-                0x00000000000111e0                __malloc_av_
-                0x00000000000119f0                __malloc_sbrk_base
-                0x00000000000119f8                __malloc_trim_threshold
- .data          0x0000000000011a00        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-memcpy.o)
- .data          0x0000000000011a00        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-memset.o)
- .data          0x0000000000011a00        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-mlock.o)
- .data          0x0000000000011a00        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-printf.o)
- .data          0x0000000000011a00        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-putchar.o)
- .data          0x0000000000011a00        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-putc.o)
- .data          0x0000000000011a00        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-puts.o)
- .data          0x0000000000011a00        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-rget.o)
- .data          0x0000000000011a00        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-sbrkr.o)
- .data          0x0000000000011a00        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-strchr.o)
- .data          0x0000000000011a00        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-strlen.o)
- .data          0x0000000000011a00        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-strtol.o)
- .data          0x0000000000011a00        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-vfprintf.o)
- .data          0x0000000000011a00        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-wbuf.o)
- .data          0x0000000000011a00        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-wsetup.o)
- .data          0x0000000000011a00        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-__atexit.o)
- .data          0x0000000000011a00        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-__call_atexit.o)
- .data          0x0000000000011a00        0x8 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-ctype_.o)
-                0x0000000000011a00                __ctype_ptr__
- .data          0x0000000000011a08        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-dtoa.o)
- .data          0x0000000000011a08        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-fflush.o)
- .data          0x0000000000011a08        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-findfp.o)
- .data          0x0000000000011a08        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-freer.o)
- .data          0x0000000000011a08        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-fvwrite.o)
- .data          0x0000000000011a08        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-fwalk.o)
- .data          0x0000000000011a08       0xa8 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-locale.o)
-                0x0000000000011a28                __mb_cur_max
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-makebuf.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-memchr.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-memmove.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-mprec.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-reallocr.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-reent.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-refill.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-s_frexp.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-stdio.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-strcmp.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-strncpy.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-vfiprintf.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-writer.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-callocr.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-closer.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-fclose.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-fputwc.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-fstatr.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-isattyr.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-lseekr.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-readr.o)
- .data          0x0000000000011ab0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-wcrtomb.o)
- .data          0x0000000000011ab0        0x8 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-wctomb_r.o)
-                0x0000000000011ab0                __wctomb
- .data          0x0000000000011ab8        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(_exit.o)
- .data          0x0000000000011ab8        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(_sbrk.o)
- .data          0x0000000000011ab8        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(close.o)
- .data          0x0000000000011ab8        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(fstat.o)
- .data          0x0000000000011ab8        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(isatty.o)
- .data          0x0000000000011ab8        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(lseek.o)
- .data          0x0000000000011ab8        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(read.o)
- .data          0x0000000000011ab8        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(write.o)
- .data          0x0000000000011ab8        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(errno.o)
- .data          0x0000000000011ab8        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(inbyte.o)
- .data          0x0000000000011ab8        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(outbyte.o)
- .data          0x0000000000011ab8        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xuartps_hw.o)
- .data          0x0000000000011ab8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1\libgcc.a(trunctfdf2.o)
- .data          0x0000000000011ab8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1\libgcc.a(sfp-exceptions.o)
- .data          0x0000000000011ab8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtend.o
- .data          0x0000000000011ab8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtn.o
+ .data          0x00000000000108c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crti.o
+ .data          0x00000000000108c0        0x8 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtbegin.o
+                0x00000000000108c0                __dso_handle
+ .data          0x00000000000108c8      0x128 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib/crt0.o
+                0x00000000000108d8                __stack_base__
+ .data          0x00000000000109f0        0x0 ./src/AXI_mem_access.o
+ .data          0x00000000000109f0        0x0 ./src/main.o
+ .data          0x00000000000109f0        0x0 ./src/platform.o
+ .data          0x00000000000109f0        0x0 ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.o
+ .data          0x00000000000109f0        0x0 ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.o
+ .data          0x00000000000109f0        0x0 ./noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.o
+ .data          0x00000000000109f0        0x0 ./noh-firmware/AXI_I2C_core/drivers/AXI_i2c.o
+ .data          0x00000000000109f0        0x0 ./noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.o
+ .data          0x00000000000109f0        0x0 ./noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.o
+ .data          0x00000000000109f0        0x0 ./noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.o
+ .data          0x00000000000109f0        0x0 ./noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.o
+ .data          0x00000000000109f0        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(asm_vectors.o)
+ .data          0x00000000000109f0        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(boot.o)
+ .data          0x00000000000109f0        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(initialise_monitor_handles.o)
+ .data          0x00000000000109f0        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(translation_table.o)
+ .data          0x00000000000109f0        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(vectors.o)
+ .data          0x00000000000109f0        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil-crt0.o)
+ .data          0x00000000000109f0        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil_cache.o)
+ .data          0x00000000000109f0       0x60 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil_exception.o)
+                0x00000000000109f0                XExc_VectorTable
+ .data          0x0000000000010a50        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil_sleepcommon.o)
+ .data          0x0000000000010a50        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(sleep.o)
+ .data          0x0000000000010a50        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xtime_l.o)
+ .data          0x0000000000010a50        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-atexit.o)
+ .data          0x0000000000010a50        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-exit.o)
+ .data          0x0000000000010a50        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-fini.o)
+ .data          0x0000000000010a50      0x750 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-impure.o)
+                0x0000000000010a50                _impure_ptr
+ .data          0x00000000000111a0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-init.o)
+ .data          0x00000000000111a0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-malloc.o)
+ .data          0x00000000000111a0      0x820 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-mallocr.o)
+                0x00000000000111a0                __malloc_av_
+                0x00000000000119b0                __malloc_sbrk_base
+                0x00000000000119b8                __malloc_trim_threshold
+ .data          0x00000000000119c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-memcpy.o)
+ .data          0x00000000000119c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-memset.o)
+ .data          0x00000000000119c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-mlock.o)
+ .data          0x00000000000119c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-printf.o)
+ .data          0x00000000000119c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-putchar.o)
+ .data          0x00000000000119c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-putc.o)
+ .data          0x00000000000119c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-puts.o)
+ .data          0x00000000000119c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-rget.o)
+ .data          0x00000000000119c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-sbrkr.o)
+ .data          0x00000000000119c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-strchr.o)
+ .data          0x00000000000119c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-strlen.o)
+ .data          0x00000000000119c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-strtol.o)
+ .data          0x00000000000119c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-vfprintf.o)
+ .data          0x00000000000119c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-wbuf.o)
+ .data          0x00000000000119c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-wsetup.o)
+ .data          0x00000000000119c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-__atexit.o)
+ .data          0x00000000000119c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-__call_atexit.o)
+ .data          0x00000000000119c0        0x8 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-ctype_.o)
+                0x00000000000119c0                __ctype_ptr__
+ .data          0x00000000000119c8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-dtoa.o)
+ .data          0x00000000000119c8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-fflush.o)
+ .data          0x00000000000119c8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-findfp.o)
+ .data          0x00000000000119c8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-freer.o)
+ .data          0x00000000000119c8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-fvwrite.o)
+ .data          0x00000000000119c8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-fwalk.o)
+ .data          0x00000000000119c8       0xa8 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-locale.o)
+                0x00000000000119e8                __mb_cur_max
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-makebuf.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-memchr.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-memmove.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-mprec.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-reallocr.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-reent.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-refill.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-s_frexp.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-stdio.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-strcmp.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-strncpy.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-vfiprintf.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-writer.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-callocr.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-closer.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-fclose.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-fputwc.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-fstatr.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-isattyr.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-lseekr.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-readr.o)
+ .data          0x0000000000011a70        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-wcrtomb.o)
+ .data          0x0000000000011a70        0x8 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib\libc.a(lib_a-wctomb_r.o)
+                0x0000000000011a70                __wctomb
+ .data          0x0000000000011a78        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(_exit.o)
+ .data          0x0000000000011a78        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(_sbrk.o)
+ .data          0x0000000000011a78        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(close.o)
+ .data          0x0000000000011a78        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(fstat.o)
+ .data          0x0000000000011a78        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(isatty.o)
+ .data          0x0000000000011a78        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(lseek.o)
+ .data          0x0000000000011a78        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(read.o)
+ .data          0x0000000000011a78        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(write.o)
+ .data          0x0000000000011a78        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(errno.o)
+ .data          0x0000000000011a78        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(inbyte.o)
+ .data          0x0000000000011a78        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(outbyte.o)
+ .data          0x0000000000011a78        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xuartps_hw.o)
+ .data          0x0000000000011a78        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1\libgcc.a(trunctfdf2.o)
+ .data          0x0000000000011a78        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1\libgcc.a(sfp-exceptions.o)
+ .data          0x0000000000011a78        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtend.o
+ .data          0x0000000000011a78        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtn.o
  *(.data.*)
  *(.gnu.linkonce.d.*)
  *(.jcr)
  *(.got)
  *(.got.plt)
-                0x0000000000011ab8                __data_end = .
+                0x0000000000011a78                __data_end = .
 
 .tm_clone_table
-                0x0000000000011ab8        0x0
+                0x0000000000011a78        0x0
  .tm_clone_table
-                0x0000000000011ab8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtbegin.o
+                0x0000000000011a78        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtbegin.o
  .tm_clone_table
-                0x0000000000011ab8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtend.o
+                0x0000000000011a78        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtend.o
 
-.igot.plt       0x0000000000011ab8        0x0
- .igot.plt      0x0000000000011ab8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtbegin.o
+.igot.plt       0x0000000000011a78        0x0
+ .igot.plt      0x0000000000011a78        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtbegin.o
 
-.data1          0x0000000000011ab8        0x8
-                0x0000000000011ac0                . = ALIGN (0x40)
- *fill*         0x0000000000011ab8        0x8 
-                0x0000000000011ac0                __data1_start = .
+.data1          0x0000000000011a78        0x8
+                0x0000000000011a80                . = ALIGN (0x40)
+ *fill*         0x0000000000011a78        0x8 
+                0x0000000000011a80                __data1_start = .
  *(.data1)
  *(.data1.*)
-                0x0000000000011ac0                __data1_end = .
+                0x0000000000011a80                __data1_end = .
 
 .got
  *(.got)
@@ -1173,46 +1174,46 @@ LOAD c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/li
 .got1
  *(.got1)
 
-.got2           0x0000000000011ac0        0x0
+.got2           0x0000000000011a80        0x0
  *(.got2)
- .got2          0x0000000000011ac0        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil-crt0.o)
+ .got2          0x0000000000011a80        0x0 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil-crt0.o)
 
-.ctors          0x0000000000011ac0        0x0
-                0x0000000000011ac0                . = ALIGN (0x40)
-                0x0000000000011ac0                __CTOR_LIST__ = .
-                0x0000000000011ac0                ___CTORS_LIST___ = .
+.ctors          0x0000000000011a80        0x0
+                0x0000000000011a80                . = ALIGN (0x40)
+                0x0000000000011a80                __CTOR_LIST__ = .
+                0x0000000000011a80                ___CTORS_LIST___ = .
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *(.ctors)
-                0x0000000000011ac0                __CTOR_END__ = .
-                0x0000000000011ac0                ___CTORS_END___ = .
+                0x0000000000011a80                __CTOR_END__ = .
+                0x0000000000011a80                ___CTORS_END___ = .
 
-.dtors          0x0000000000011ac0        0x0
-                0x0000000000011ac0                . = ALIGN (0x40)
-                0x0000000000011ac0                __DTOR_LIST__ = .
-                0x0000000000011ac0                ___DTORS_LIST___ = .
+.dtors          0x0000000000011a80        0x0
+                0x0000000000011a80                . = ALIGN (0x40)
+                0x0000000000011a80                __DTOR_LIST__ = .
+                0x0000000000011a80                ___DTORS_LIST___ = .
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *(.dtors)
-                0x0000000000011ac0                __DTOR_END__ = .
-                0x0000000000011ac0                ___DTORS_END___ = .
+                0x0000000000011a80                __DTOR_END__ = .
+                0x0000000000011a80                ___DTORS_END___ = .
 
-.fixup          0x0000000000011ac0        0x0
-                0x0000000000011ac0                __fixup_start = .
+.fixup          0x0000000000011a80        0x0
+                0x0000000000011a80                __fixup_start = .
  *(.fixup)
-                0x0000000000011ac0                __fixup_end = .
+                0x0000000000011a80                __fixup_end = .
 
-.eh_frame       0x0000000000011ac0        0x4
+.eh_frame       0x0000000000011a80        0x4
  *(.eh_frame)
- .eh_frame      0x0000000000011ac0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtbegin.o
- .eh_frame      0x0000000000011ac0        0x4 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtend.o
+ .eh_frame      0x0000000000011a80        0x0 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtbegin.o
+ .eh_frame      0x0000000000011a80        0x4 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtend.o
 
-.eh_framehdr    0x0000000000011ac4        0x0
-                0x0000000000011ac4                __eh_framehdr_start = .
+.eh_framehdr    0x0000000000011a84        0x0
+                0x0000000000011a84                __eh_framehdr_start = .
  *(.eh_framehdr)
-                0x0000000000011ac4                __eh_framehdr_end = .
+                0x0000000000011a84                __eh_framehdr_end = .
 
 .gcc_except_table
  *(.gcc_except_table)
@@ -1436,7 +1437,7 @@ LOAD c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/li
  *fill*         0x0000000000019124       0x1c 
                 0x0000000000019140                __bss_end__ = .
                 0x0000000000019080                _SDA_BASE_ = (__sdata_start + ((__sbss_end - __sdata_start) / 0x2))
-                0x0000000000010900                _SDA2_BASE_ = (__sdata2_start + ((__sbss2_end - __sdata2_start) / 0x2))
+                0x00000000000108c0                _SDA2_BASE_ = (__sdata2_start + ((__sbss2_end - __sdata2_start) / 0x2))
 
 .heap           0x0000000000019140     0x2000
                 0x0000000000019140                . = ALIGN (0x40)
@@ -1578,41 +1579,41 @@ OUTPUT(test_app.elf elf64-littleaarch64)
  .comment       0x0000000000000031       0x32 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1\libgcc.a(sfp-exceptions.o)
  .comment       0x0000000000000031       0x32 c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/crtend.o
 
-.debug_line     0x0000000000000000     0x47af
+.debug_line     0x0000000000000000     0x47ad
  .debug_line    0x0000000000000000       0xdf c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib/crt0.o
  .debug_line    0x00000000000000df       0x64 ./src/AXI_mem_access.o
- .debug_line    0x0000000000000143      0x828 ./src/main.o
- .debug_line    0x000000000000096b      0x2b0 ./src/platform.o
- .debug_line    0x0000000000000c1b      0x165 ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.o
- .debug_line    0x0000000000000d80       0x8e ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.o
- .debug_line    0x0000000000000e0e      0x46a ./noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.o
- .debug_line    0x0000000000001278      0x2f3 ./noh-firmware/AXI_I2C_core/drivers/AXI_i2c.o
- .debug_line    0x000000000000156b      0x38d ./noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.o
- .debug_line    0x00000000000018f8      0x356 ./noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.o
- .debug_line    0x0000000000001c4e      0x337 ./noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.o
- .debug_line    0x0000000000001f85      0x48e ./noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.o
- .debug_line    0x0000000000002413       0x85 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(asm_vectors.o)
- .debug_line    0x0000000000002498       0xc7 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(boot.o)
- .debug_line    0x000000000000255f       0x51 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(initialise_monitor_handles.o)
- .debug_line    0x00000000000025b0      0x151 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(vectors.o)
- .debug_line    0x0000000000002701       0x5c ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil-crt0.o)
- .debug_line    0x000000000000275d      0x49b ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil_cache.o)
- .debug_line    0x0000000000002bf8      0x16b ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil_exception.o)
- .debug_line    0x0000000000002d63      0x190 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil_sleepcommon.o)
- .debug_line    0x0000000000002ef3      0x227 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(sleep.o)
- .debug_line    0x000000000000311a      0x261 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xtime_l.o)
- .debug_line    0x000000000000337b       0xad ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(_exit.o)
- .debug_line    0x0000000000003428      0x133 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(_sbrk.o)
- .debug_line    0x000000000000355b      0x11e ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(close.o)
- .debug_line    0x0000000000003679      0x226 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(fstat.o)
- .debug_line    0x000000000000389f       0xaf ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(isatty.o)
- .debug_line    0x000000000000394e      0x1ba ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(lseek.o)
- .debug_line    0x0000000000003b08      0x21e ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(read.o)
- .debug_line    0x0000000000003d26      0x225 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(write.o)
- .debug_line    0x0000000000003f4b      0x133 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(errno.o)
- .debug_line    0x000000000000407e      0x233 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(inbyte.o)
- .debug_line    0x00000000000042b1      0x234 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(outbyte.o)
- .debug_line    0x00000000000044e5      0x2ca ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xuartps_hw.o)
+ .debug_line    0x0000000000000143      0x826 ./src/main.o
+ .debug_line    0x0000000000000969      0x2b0 ./src/platform.o
+ .debug_line    0x0000000000000c19      0x165 ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_Simple_GPIO_Core.o
+ .debug_line    0x0000000000000d7e       0x8e ./noh-firmware/AXI_simple_gpio_core/drivers/AXI_mem_access.o
+ .debug_line    0x0000000000000e0c      0x46a ./noh-firmware/AXI_UART_core/drivers/AXI_UART_master_core.o
+ .debug_line    0x0000000000001276      0x2f3 ./noh-firmware/AXI_I2C_core/drivers/AXI_i2c.o
+ .debug_line    0x0000000000001569      0x38d ./noh-firmware/AXI_DMM_core/drivers/AXI_DMM_core_driver.o
+ .debug_line    0x00000000000018f6      0x356 ./noh-firmware/AXI_DAC_core/drivers/AXI_DAC_core_driver.o
+ .debug_line    0x0000000000001c4c      0x337 ./noh-firmware/AXI_CAN_core/drivers/AXI_CAN_core.o
+ .debug_line    0x0000000000001f83      0x48e ./noh-firmware/AXI_ADC_core/drivers/AXI_ADC_core_driver.o
+ .debug_line    0x0000000000002411       0x85 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(asm_vectors.o)
+ .debug_line    0x0000000000002496       0xc7 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(boot.o)
+ .debug_line    0x000000000000255d       0x51 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(initialise_monitor_handles.o)
+ .debug_line    0x00000000000025ae      0x151 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(vectors.o)
+ .debug_line    0x00000000000026ff       0x5c ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil-crt0.o)
+ .debug_line    0x000000000000275b      0x49b ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil_cache.o)
+ .debug_line    0x0000000000002bf6      0x16b ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil_exception.o)
+ .debug_line    0x0000000000002d61      0x190 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xil_sleepcommon.o)
+ .debug_line    0x0000000000002ef1      0x227 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(sleep.o)
+ .debug_line    0x0000000000003118      0x261 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xtime_l.o)
+ .debug_line    0x0000000000003379       0xad ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(_exit.o)
+ .debug_line    0x0000000000003426      0x133 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(_sbrk.o)
+ .debug_line    0x0000000000003559      0x11e ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(close.o)
+ .debug_line    0x0000000000003677      0x226 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(fstat.o)
+ .debug_line    0x000000000000389d       0xaf ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(isatty.o)
+ .debug_line    0x000000000000394c      0x1ba ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(lseek.o)
+ .debug_line    0x0000000000003b06      0x21e ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(read.o)
+ .debug_line    0x0000000000003d24      0x225 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(write.o)
+ .debug_line    0x0000000000003f49      0x133 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(errno.o)
+ .debug_line    0x000000000000407c      0x233 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(inbyte.o)
+ .debug_line    0x00000000000042af      0x234 ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(outbyte.o)
+ .debug_line    0x00000000000044e3      0x2ca ../../standalone_bsp_0/psu_cortexa53_0/lib\libxil.a(xuartps_hw.o)
 
 .debug_info     0x0000000000000000     0xd909
  .debug_info    0x0000000000000000       0x2e c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib/crt0.o

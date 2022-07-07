@@ -2,7 +2,9 @@
 <section name="Workbench">
 	<item value="C:\eclipse-workspace\git\ATC" key="bootgen_files_selection"/>
 	<item value="C:\git\noh-vivado-project\noh-vivado-project.sdk" key="com.xilinx.sdk.hw.ui.hwspec.last"/>
+	<item value="C:\eclipse_workspace\ATC\atc_hw" key="program_fpga_view_bit_bmm_browse_key"/>
 	<item value="C:\eclipse-workspace\git\ATC\ATC-HW-project" key="debug_files_selection"/>
 	<item value="C:\Users\Brendan\Downloads" key="zynq_flash_files_selection"/>
+	<item value="C:\git\noh-vivado-project\noh-vivado-project.sdk" key="hwspec_file_selection"/>
 	<item value="C:\git\noh-vivado-project\noh-vivado-project.sdk" key="last_stored_selection"/>
 </section>

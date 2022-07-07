@@ -339,11 +339,6 @@
 #define XPAR_AXI_DAC_CORE_0_HIGHADDR 0x80009FFF
 
 
-/* Definitions for peripheral AXI_DMM_CORE_0 */
-#define XPAR_AXI_DMM_CORE_0_BASEADDR 0x8000B000
-#define XPAR_AXI_DMM_CORE_0_HIGHADDR 0x8000BFFF
-
-
 /* Definitions for peripheral AXI_I2C_CORE_0 */
 #define XPAR_AXI_I2C_CORE_0_BASEADDR 0x80006000
 #define XPAR_AXI_I2C_CORE_0_HIGHADDR 0x80006FFF
@@ -652,6 +647,11 @@
 /* Definitions for peripheral PSU_USB_0 */
 #define XPAR_PSU_USB_0_S_AXI_BASEADDR 0xFF9D0000
 #define XPAR_PSU_USB_0_S_AXI_HIGHADDR 0xFF9DFFFF
+
+
+/* Definitions for peripheral AXI_DMM_CORE_0 */
+#define XPAR_AXI_DMM_CORE_0_BASEADDR 0x8000B000
+#define XPAR_AXI_DMM_CORE_0_HIGHADDR 0x8000BFFF
 
 
 /******************************************************************/

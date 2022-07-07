@@ -241,10 +241,10 @@ int main()
 	//**************
 
 	//---ADC CH 3---
-		ATC_ADC_cal_data->x10.offset[3] = 41;
-		ATC_ADC_cal_data->x10.gain_p[3] = 0x8000;
+		ATC_ADC_cal_data->x10.offset[3] = 133;
+		ATC_ADC_cal_data->x10.gain_p[3] = 0x826B;
 		ATC_ADC_cal_data->x10.gain_err_p[3] = 0;
-		ATC_ADC_cal_data->x10.gain_n[3] = 0x8000;
+		ATC_ADC_cal_data->x10.gain_n[3] = 0x8265;
 		ATC_ADC_cal_data->x10.gain_err_n[3] = 0;
 
 		ATC_ADC_cal_data->x100.offset[3] = 0;
@@ -609,7 +609,7 @@ int main()
 				while(1)
 				{
 #endif
-					printf("\n\n\b\r\b\r");
+					//printf("\n\n\b\r\b\r");
 					printf("|");
 
 #endif
@@ -624,8 +624,6 @@ int main()
 
 
 
-
-
 							while(axi_adc_get_status(ADC_BASE_ADDR, j))
 							{
 
@@ -635,7 +633,6 @@ int main()
 							printf("\nInst Freq: %u\n", axi_dmm_get_inst_freq(DMM_BASE_ADDR, CHANNEL_NUM));
 							printf("\nAve RMS: %u\n", axi_dmm_get_ave_RMS(DMM_BASE_ADDR, CHANNEL_NUM));
 							printf("\nInst RMS: %u\n", axi_dmm_get_inst_RMS(DMM_BASE_ADDR, CHANNEL_NUM));
-							printf("\nCapture Count: %d\n", a);
 
 							usleep(10000);
 

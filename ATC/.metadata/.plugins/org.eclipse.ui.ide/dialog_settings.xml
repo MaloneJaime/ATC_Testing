@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\git\noh-vivado-project\noh-vivado-project.sdk"/>
+		<item value="C:\git\noh-vivado-project"/>
 		<item value="C:\eclipse_workspace\ATC\test_app"/>
 		<item value="C:\eclipse_workspace\ATC"/>
 	</list>

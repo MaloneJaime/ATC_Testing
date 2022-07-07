@@ -2,12 +2,15 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="FPGA_VERSION_BASE_ADDR" key="selection"/>
+		<item value="CAPTURE" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="capture"/>
+			<item value="axi_dmm_get_ave_RMS"/>
+			<item value="DMM_AVE_RMS_CH3_ADDR"/>
 			<item value="FPGA_VERSION_BASE_ADDR"/>
 			<item value="printf"/>
 			<item value="Ch"/>

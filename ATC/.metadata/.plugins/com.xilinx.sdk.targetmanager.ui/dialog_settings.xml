@@ -3,7 +3,7 @@
 	<item value="Local" key="atc_hw-target"/>
 	<item value="atc_hw" key="programfpga.hwplatform"/>
 	<item value="" key="atc_hw-bmmFile"/>
-	<item value="Auto Detect" key="atc_hw-device"/>
+	<item value="Digilent JTAG-HS2 210249AFC9D1/1-xczu4" key="atc_hw-device"/>
 	<item value="false" key="atc_hw-partial_bit"/>
 	<item value="noh_system_BD_wrapper.bit" key="atc_hw-bitFile"/>
 </section>
